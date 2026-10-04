@@ -2,362 +2,161 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Tanvir Ahmmed (Shoron) | HSC 2026 · Technology & Science Enthusiast</title>
-<meta name="description" content="Tanvir Ahmmed (Shoron) — an HSC 2026 graduate from Lions School and College, Saidpur, Bangladesh.">
-<meta name="author" content="Tanvir Ahmmed">
-<meta name="robots" content="index,follow">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#1a0716">
-<link rel="canonical" href="https://tanvirshoron.github.io/">
-<meta property="og:title" content="Tanvir Ahmmed">
-<meta property="og:description" content="Tanvir Ahmmed (Shoron) — HSC 2026 graduate from Lions School and College, Saidpur, Bangladesh.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tanvir Ahmed (Shoron) | Personal Website</title>
+<meta name="description" content="Tanvir Ahmed (Shoron) — student, explorer, photography and technology enthusiast.">
+<meta name="author" content="Tanvir Ahmed">
+<meta name="theme-color" content="#f7f4ef">
+<meta property="og:title" content="Tanvir Ahmed">
+<meta property="og:description" content="Personal website of Tanvir Ahmed (Shoron).">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://tanvirshoron.github.io/">
-<meta property="og:image" content="https://tanvirshoron.github.io/images/tanvir-ahmmed.jpg">
-<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&family=Dela+Gothic+One&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfilePage","name":"Tanvir Ahmmed — Personal Profile","url":"https://tanvirshoron.github.io/",
-"mainEntity":{"@type":"Person","name":"Tanvir Ahmmed","alternateName":"Shoron","image":"https://tanvirshoron.github.io/images/tanvir-ahmmed.jpg",
-"description":"HSC 2026 graduate from Lions School and College, Saidpur, Bangladesh.",
-"sameAs":["https://www.instagram.com/tanvir__shoron/","https://www.linkedin.com/in/tanvirshoron/","https://github.com/tanvirshoron","https://www.youtube.com/@tanvir__shoron","https://www.reddit.com/user/tanvirshoron/"]}}
-</script>
 <style>
 :root{
-  --night:#12040f; --dusk:#2a0d33; --cherry:#8a1240; --sakura:#ffb3cf; --rose:#ff5c93; --sky:#cdb8ff; --lilac:#a98bff; --ink:#fff6fa; --muted:#e3cbe8;
-  --line:rgba(255,255,255,.22); --max:980px;
+  --bg:#f7f4ef;--bg2:#fffdf9;--card:rgba(255,255,255,.72);--card2:rgba(255,255,255,.92);
+  --ink:#19171a;--muted:#6f6870;--line:rgba(25,23,26,.13);
+  --accent:#7b4cff;--accent2:#ff5d9e;--max:1050px;--glow:rgba(123,76,255,.12)
 }
+html.black{--bg:#050505;--bg2:#0b0b0d;--card:rgba(255,255,255,.055);--card2:rgba(255,255,255,.085);--ink:#f7f7f7;--muted:#a9a9b2;--line:rgba(255,255,255,.13);--accent:#fff;--accent2:#8f8f99;--glow:rgba(255,255,255,.13)}
+html.sakura{--bg:#12040f;--bg2:#2a0d33;--card:rgba(255,255,255,.07);--ink:#fff6fa;--muted:#e3cbe8;--line:rgba(255,255,255,.2);--accent:#ff5c93;--accent2:#a98bff;--glow:rgba(255,92,147,.22)}
+html.ocean{--bg:#031016;--bg2:#071f2c;--card:rgba(255,255,255,.06);--ink:#effcff;--muted:#a8cbd4;--line:rgba(255,255,255,.14);--accent:#61e7ff;--accent2:#668cff;--glow:rgba(97,231,255,.18)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0; color:var(--ink); line-height:1.7; overflow-x:hidden;
-  font-family:"Zen Maru Gothic",system-ui,-apple-system,"Segoe UI",sans-serif;
-  background:
-    radial-gradient(ellipse 80% 45% at 50% -5%,rgba(232,69,124,.35),transparent 70%),
-    linear-gradient(180deg,#3a0f2e 0%,#2a0d33 40%,#12040f 100%) fixed;
-}
+body{margin:0;color:var(--ink);line-height:1.7;overflow-x:hidden;font-family:"Zen Maru Gothic",system-ui,sans-serif;background:radial-gradient(ellipse 75% 45% at 50% -10%,var(--glow),transparent 70%),linear-gradient(180deg,var(--bg2),var(--bg)) fixed}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 80%)}
 a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--sakura);outline-offset:3px;border-radius:8px}
+button,input,textarea{font:inherit}
+button{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
 .wrap{width:min(92%,var(--max));margin:auto}
-html{scroll-padding-top:74px}
-.orb{position:fixed;z-index:0;border-radius:50%;filter:blur(80px);pointer-events:none;animation:drift 18s ease-in-out infinite alternate;will-change:transform}
-.o1{width:420px;height:420px;left:-120px;top:12%;background:rgba(125,70,230,.45)}
-.o2{width:480px;height:480px;right:-150px;top:42%;background:rgba(190,30,90,.4);animation-duration:23s}
-.o3{width:340px;height:340px;left:35%;bottom:-120px;background:rgba(150,90,255,.3);animation-duration:27s}
-@keyframes drift{to{transform:translate(70px,-50px) scale(1.15)}}
-#sky{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-main,nav,footer{position:relative;z-index:1}
-
-/* nav */
-nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);background:rgba(40,10,40,.38);border-bottom:1px solid var(--line);box-shadow:inset 0 -1px 0 rgba(255,255,255,.08)}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-.brand{font-family:"Dela Gothic One",sans-serif;font-size:1.05rem}
-.brand i{color:var(--rose);font-style:normal}
-.navlinks{display:flex;gap:20px;color:var(--muted);font-size:.95rem;font-weight:500}
-.navlinks a{transition:color .18s ease}
-.navlinks a:hover{color:var(--sakura)}
-.scroll-progress{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:linear-gradient(90deg,var(--rose),var(--lilac));box-shadow:0 0 10px rgba(255,92,147,.7);transition:width .08s linear}
-
-/* Apple-style liquid glass */
-.glass{
-  position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.18);border-radius:28px;
-  background:linear-gradient(135deg,rgba(255,255,255,.17),rgba(255,255,255,.04) 55%,rgba(255,170,210,.07));
-  backdrop-filter:blur(24px) saturate(190%) brightness(1.08);-webkit-backdrop-filter:blur(24px) saturate(190%) brightness(1.08);
-  box-shadow:inset 1.5px 1.5px 0 rgba(255,255,255,.5),inset -1px -1px 0 rgba(255,255,255,.1),inset 0 0 28px rgba(255,255,255,.06),0 26px 60px rgba(20,0,20,.5);
-}
-.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:.55;transition:opacity .3s;
-  background:radial-gradient(260px circle at var(--sx,25%) var(--sy,0%),rgba(255,255,255,.3),transparent 62%)}
-.glass:hover::before{opacity:1}
-.glass>*{position:relative}
-
-/* hero */
-.hero{min-height:84vh;display:grid;place-items:center;padding:60px 0}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
-.kana{font-size:.95rem;color:var(--sakura);letter-spacing:.08em;font-weight:700}
-h1{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:clamp(2.6rem,8vw,5.4rem);line-height:1.02;margin:12px 0 18px;text-shadow:0 0 30px rgba(255,126,182,.45)}
-h1 span{display:block;background:linear-gradient(100deg,var(--sakura),var(--lilac) 60%,var(--sky));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 18px rgba(255,92,147,.4))}
-.tag{display:inline-block;min-height:1.6em;color:var(--sky);font-weight:700;font-size:1.05rem}
+nav,main,footer{position:relative;z-index:2}
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg2) 82%,transparent);border-bottom:1px solid var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+.brand{font-family:"Dela Gothic One",sans-serif;font-size:1rem;letter-spacing:.02em}
+.brand i{font-style:normal;color:var(--accent)}
+.navlinks{display:flex;gap:18px;color:var(--muted);font-size:.9rem}
+.navlinks a:hover{color:var(--ink)}
+.tools{display:flex;gap:7px}
+.tbtn,.btn{border:1px solid var(--line);background:var(--card);border-radius:12px;cursor:pointer}
+.tbtn{padding:7px 10px}
+.hero{min-height:84vh;display:grid;place-items:center;padding:64px 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.kana{font-size:.9rem;color:var(--muted);letter-spacing:.1em;font-weight:700}
+h1{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:clamp(2.7rem,8vw,5.4rem);line-height:1.02;margin:12px 0 18px}
+h1 span{display:block;background:linear-gradient(100deg,var(--ink),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{display:inline-block;min-height:1.6em;color:var(--muted);font-weight:700}
 .tag::after{content:"▍";margin-left:2px;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
-.lead{color:var(--muted);font-size:1.1rem;max-width:560px}
-.buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
-.btn{padding:12px 20px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(255,255,255,.05));backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);box-shadow:inset 1px 1px 0 rgba(255,255,255,.45),0 8px 24px rgba(20,0,20,.35);font-weight:700;transition:transform .2s,box-shadow .2s,background .2s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(214,36,110,.45)}
-.btn.primary{background:linear-gradient(135deg,#d6246e,#7b4be0);border-color:rgba(255,255,255,.3);color:#fff}
-
-/* photo: anime-style frame */
-.photo-card{display:flex;justify-content:center;perspective:900px}
-.frame{position:relative;width:min(330px,78vw);aspect-ratio:1;transition:transform .15s ease-out;transform-style:preserve-3d;will-change:transform}
-.frame::before{content:"";position:absolute;inset:-14px;border-radius:44px;background:conic-gradient(from 0deg,#d6246e,#7b4be0,#cdb8ff,#ff9fc2,#d6246e);filter:blur(18px);opacity:.65;animation:spin 10s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.photo{position:relative;width:100%;height:100%;object-fit:cover;border-radius:34px;border:3px solid rgba(255,255,255,.85);box-shadow:0 20px 60px rgba(0,0,0,.45)}
-.sticker{position:absolute;right:-10px;bottom:-12px;padding:6px 14px;border-radius:999px;background:var(--sakura);color:#3a1240;font-weight:900;font-size:.85rem;transform:rotate(-6deg);box-shadow:0 6px 18px rgba(0,0,0,.35)}
-
-/* sections */
-section{padding:56px 0;content-visibility:auto;contain-intrinsic-size:1px 620px}
-h2{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:1.9rem;margin:0 0 14px}
-h2::before{content:"「";color:var(--rose)} h2::after{content:"」";color:var(--rose)}
+.lead{color:var(--muted);font-size:1.08rem;max-width:570px}
+.buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:var(--card2)}
+.btn.primary{background:var(--ink);color:#050505;border-color:var(--ink)}
+.photo-card{display:flex;justify-content:center}
+.frame{position:relative;width:min(330px,78vw);aspect-ratio:1}
+.frame::before{content:"";position:absolute;inset:-12px;border-radius:42px;background:conic-gradient(from 180deg,transparent,var(--accent),transparent,var(--accent2),transparent);filter:blur(16px);opacity:.35}
+.photo{position:relative;width:100%;height:100%;object-fit:cover;border-radius:32px;border:1px solid rgba(255,255,255,.5);box-shadow:0 25px 80px rgba(0,0,0,.55)}
+.sticker{position:absolute;right:-8px;bottom:-10px;padding:5px 12px;border-radius:999px;background:var(--ink);color:#050505;font-weight:900;font-size:.8rem}
+section{padding:65px 0}
+h2{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:1.8rem;margin:0 0 12px}
+h2::before{content:"/ ";color:var(--accent)}
 .muted{color:var(--muted)}
-.card{padding:24px 26px}
-.card h3{margin:0 0 6px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
-.socials{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
-.social{display:flex;justify-content:space-between;gap:10px;padding:18px 22px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:20px}
+.glass{border:1px solid var(--line);border-radius:22px;background:var(--card);box-shadow:0 14px 40px rgba(0,0,0,.18)}
+.card{padding:22px}
+.card h3{margin:0 0 5px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+.chip{padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:rgba(255,255,255,.035)}
+.socials{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+.social{display:flex;justify-content:space-between;gap:10px;padding:17px 19px;transition:.2s}
 .social span{color:var(--muted)}
-.social:hover{transform:translateY(-3px);border-color:var(--sakura);box-shadow:inset 1.5px 1.5px 0 rgba(255,255,255,.5),0 14px 40px rgba(214,36,110,.4)}
-.to-top{position:fixed;right:20px;bottom:20px;z-index:4;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(40,10,40,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 8px 24px rgba(20,0,20,.35);opacity:0;transform:translateY(10px);pointer-events:none;transition:opacity .2s,transform .2s}
-.to-top.show{opacity:1;transform:none;pointer-events:auto}
-footer{padding:32px 0 50px;color:var(--muted);border-top:1px solid var(--line);text-align:center}
+.social:hover{transform:translateY(-2px);border-color:var(--accent)}
+form{display:grid;gap:11px;margin-top:18px}
+input,textarea{width:100%;padding:12px 14px;color:var(--ink);background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:14px;outline:none}
+textarea{min-height:120px;resize:vertical}
+footer{padding:34px 0 48px;color:var(--muted);border-top:1px solid var(--line);text-align:center}
+#bar{position:fixed;top:0;left:0;height:3px;width:100%;z-index:50;background:var(--accent);transform:scaleX(0);transform-origin:left}
+#top2{position:fixed;right:18px;bottom:18px;z-index:30;width:44px;height:44px;border-radius:50%;opacity:0;pointer-events:none;transition:.25s}
+#top2.show{opacity:1;pointer-events:auto}
+#toast{position:fixed;left:50%;bottom:24px;z-index:60;transform:translate(-50%,90px);padding:9px 16px;border-radius:999px;background:var(--ink);color:#050505;font-weight:800;transition:.3s}
+#toast.show{transform:translate(-50%,0)}
+#ai{position:fixed;right:18px;bottom:76px;width:min(390px,calc(100vw - 36px));height:560px;z-index:40;display:none;flex-direction:column;overflow:hidden;background:rgba(9,9,10,.96);border:1px solid var(--line);border-radius:24px;box-shadow:0 25px 90px rgba(0,0,0,.65);backdrop-filter:blur(20px)}
+#ai.open{display:flex}
+.ai-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid var(--line)}
+.ai-title b{display:block}.ai-title small{color:var(--muted)}
+#chat{flex:1;overflow:auto;padding:14px}
+.msg{max-width:86%;padding:10px 12px;margin:0 0 10px;border-radius:15px;white-space:pre-wrap;word-break:break-word}
+.msg.ai{background:var(--card2);border:1px solid var(--line)}
+.msg.user{margin-left:auto;background:var(--ink);color:#050505}
+.ai-compose{display:flex;gap:7px;padding:10px;border-top:1px solid var(--line)}
+#aiInput{min-height:44px;max-height:110px;resize:none}
+#aiSend{width:48px;border-radius:14px}
+.ai-settings{padding:9px 12px;border-top:1px solid var(--line);display:none;gap:7px}
+.ai-settings.open{display:grid}
+.ai-settings small{color:var(--muted)}
+#aiBubble{position:fixed;right:18px;bottom:18px;z-index:41;width:52px;height:52px;border:1px solid var(--line);border-radius:50%;background:var(--ink);color:#050505;cursor:pointer;font-size:1.25rem;box-shadow:0 12px 35px rgba(0,0,0,.4)}
+#theme{position:fixed;right:18px;top:65px;z-index:35;display:none;width:190px;padding:13px}
+#theme.open{display:block}
+.theme-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:9px}
+.theme-dot{height:35px;border-radius:10px;border:1px solid var(--line);cursor:pointer}
+.classic{background:linear-gradient(135deg,#fffdf9,#e9e2ff)}.black{background:#050505}.pink{background:#8a1240}.blue{background:#064b61}
 
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.feature-card{padding:20px;min-height:180px;position:relative;overflow:hidden}
+.feature-card::after{content:"";position:absolute;width:130px;height:130px;right:-50px;bottom:-60px;border-radius:50%;background:var(--glow);filter:blur(4px)}
+.feature-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.feature-icon{font-size:1.5rem}
+.live-value{font-size:2rem;font-weight:900;letter-spacing:.02em}.status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#35d07f;box-shadow:0 0 14px #35d07f;margin-right:7px}
+.quiz-q{font-weight:800;font-size:1.05rem;margin:14px 0}.quiz-options{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.quiz-option{padding:10px 12px;text-align:left;border:1px solid var(--line);background:var(--card);border-radius:12px;cursor:pointer}.quiz-option:hover{border-color:var(--accent)}.quiz-option.correct{outline:2px solid #35d07f}.quiz-option.wrong{outline:2px solid #ff667d}.quiz-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.85rem}
+.game-arena{height:190px;border:1px dashed var(--line);border-radius:18px;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 50%,var(--glow),transparent 65%);margin-top:14px}.game-target{position:absolute;width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--bg);font-weight:900;cursor:pointer;display:none}.game-score{font-size:1.6rem;font-weight:900}.timer{font-variant-numeric:tabular-nums;font-size:2.4rem;font-weight:900}.timer-row{display:flex;gap:8px;flex-wrap:wrap}.mini-btn{padding:8px 12px;border:1px solid var(--line);background:var(--card);border-radius:10px;cursor:pointer}.cmd{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.45);backdrop-filter:blur(8px);display:none;align-items:flex-start;justify-content:center;padding-top:12vh}.cmd.open{display:flex}.cmd-box{width:min(620px,92vw);padding:12px}.cmd-box input{margin-bottom:8px}.cmd-item{padding:11px 13px;border-radius:10px;cursor:pointer}.cmd-item:hover{background:var(--card2)}
+@media(max-width:760px){.feature-grid{grid-template-columns:1fr}.quiz-options{grid-template-columns:1fr}}
 @media(max-width:760px){
-  /* Keep the same glass look, but avoid unnecessary paint work outside each card. */
-  .glass{contain:paint}
-  .glass{backdrop-filter:blur(18px) saturate(170%);-webkit-backdrop-filter:blur(18px) saturate(170%)}
-  .orb{filter:blur(55px)}
-  .to-top{right:14px;bottom:14px}
-  .navlinks{display:none}
-  .hero-grid{grid-template-columns:1fr;text-align:center;gap:36px}
-  .lead{margin:auto}.buttons{justify-content:center}
-  .socials{grid-template-columns:1fr}
+ .navlinks{display:none}.hero-grid{grid-template-columns:1fr;text-align:center;gap:35px}
+ .lead{margin:auto}.buttons{justify-content:center}.socials{grid-template-columns:1fr}
+ #ai{bottom:78px;height:68vh}
 }
-@media(prefers-reduced-motion:reduce){
-  .orb{animation:none}
-  html{scroll-behavior:auto}
-  .frame::before{animation:none}.tag::after{animation:none}
-}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tag::after{animation:none}.btn,.social{transition:none}}
 </style>
 </head>
 <body>
-<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
-<canvas id="sky" aria-hidden="true"></canvas>
+<div id="bar"></div><div id="toast" role="status"></div>
+<button id="top2" class="glass" aria-label="Back to top">↑</button>
 
 <nav>
-  <div class="wrap">
-    <a class="brand" href="#top">Tanvir<i>✿</i>Ahmmed</a>
-    <div class="navlinks">
-      <a href="#about">About</a>
-      <a href="#interests">Interests</a>
-      <a href="#connect">Connect</a>
-    </div>
+ <div class="wrap">
+  <a class="brand" href="#top">Tanvir<i>✦</i>Ahmed</a>
+  <div class="navlinks">
+   <a href="#about">About</a><a href="#features">Features</a><a href="#quiz">Quiz</a><a href="#live">Live</a><a href="#ai-section">AI</a><a href="#connect">Connect</a>
   </div>
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="tools">
+   <button class="tbtn" id="themeBtn" aria-label="Change theme">◐</button>
+   <button class="tbtn" id="aiTop" aria-label="Open AI assistant">AI</button>
+  </div>
+ </div>
 </nav>
+<div id="theme" class="glass">
+ <b>Theme</b>
+ <div class="theme-grid">
+  <button class="theme-dot classic" data-theme="classic" aria-label="Classic default"></button><button class="theme-dot black" data-theme="black" aria-label="Black aesthetic"></button>
+  <button class="theme-dot pink" data-theme="sakura" aria-label="Sakura"></button>
+  <button class="theme-dot blue" data-theme="ocean" aria-label="Ocean"></button>
+ </div>
+</div>
 
 <main id="top">
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="kana">✦ しょろん · HSC 2026</div>
-        <h1>Tanvir <span>Ahmmed</span></h1>
-        <div class="tag" id="tag" aria-label="Student, learner, explorer"></div>
-        <p class="lead">Hi, I'm Tanvir, also known as <strong>Shoron</strong>. I'm a student from Bangladesh with a growing interest in Computer Science, Aerospace, science and technology.</p>
-        <div class="buttons">
-          <a class="btn primary" href="#connect">Connect with me</a>
-          <a class="btn" href="#about">About me</a>
-          <a class="btn" href="mailto:tanvir.shoron@outlook.com">Email me</a>
-        </div>
-      </div>
-      <div class="photo-card">
-        <div class="frame" id="frame">
-          <img class="photo" src="images/tanvir-ahmmed.jpg" alt="Tanvir Ahmmed" width="330" height="330" fetchpriority="high" decoding="async">
-          <div class="sticker">Shoron ✿</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="wrap">
-      <h2>About me</h2>
-      <p class="muted">I completed my HSC examination in 2026 from Lions School and College, Saidpur. I'm currently exploring my next academic path and continuing to build my skills. This page is my central online profile and connects my public profiles in one place.</p>
-      <div class="glass card" style="margin-top:22px">
-        <h3>🎓 Education</h3>
-        <p class="muted" style="margin:0"><strong>HSC 2026</strong><br>Lions School and College, Saidpur</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="interests">
-    <div class="wrap">
-      <h2>Interests</h2>
-      <div class="cards">
-        <article class="glass card"><h3>🔬 Science & Technology</h3><p class="muted" style="margin:0">Curious about how things work and exploring new fields.</p></article>
-        <article class="glass card"><h3>💻 Computer Science</h3><p class="muted" style="margin:0">Building skills step by step.</p></article>
-        <article class="glass card"><h3>🚀 Aerospace</h3><p class="muted" style="margin:0">Fascinated by flight, rockets and space.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="connect">
-    <div class="wrap">
-      <h2>Find me online</h2>
-      <p class="muted">These are my public profiles.</p>
-      <div class="socials">
-        <a class="glass social" href="https://www.instagram.com/tanvir__shoron/" target="_blank" rel="me noopener"><strong>Instagram</strong><span>@tanvir__shoron ↗</span></a>
-        <a class="glass social" href="https://www.linkedin.com/in/tanvirshoron/" target="_blank" rel="me noopener"><strong>LinkedIn</strong><span>tanvirshoron ↗</span></a>
-        <a class="glass social" href="https://github.com/tanvirshoron" target="_blank" rel="me noopener"><strong>GitHub</strong><span>tanvirshoron ↗</span></a>
-        <a class="glass social" href="https://www.youtube.com/@tanvir__shoron" target="_blank" rel="me noopener"><strong>YouTube</strong><span>@tanvir__shoron ↗</span></a>
-        <a class="glass social" href="https://www.reddit.com/user/tanvirshoron/" target="_blank" rel="me noopener"><strong>Reddit</strong><span>u/tanvirshoron ↗</span></a>
-        <!-- Discord: paste your numeric user ID in the link below, e.g. https://discord.com/users/123456789012345678 -->
-        <div class="glass social"><strong>Discord</strong><span>tanvir__shoron</span></div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<a class="to-top" href="#top" aria-label="Back to top">↑</a>
-
-<footer><div class="wrap">© 2026 Tanvir Ahmmed · Shoron ✿</div></footer>
-
-<script>
-(() => {
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* typing tagline */
-  const tag = document.getElementById('tag');
-  const words = ['Student','Learner','Explorer of science & tech'];
-  if (reduce) { tag.textContent = words.join(' · '); }
-  else {
-    let w = 0, c = 0, del = false;
-    (function tick() {
-      const t = words[w];
-      tag.textContent = t.slice(0, c);
-      if (!del && c === t.length) { del = true; return setTimeout(tick, 1400); }
-      if (del && c === 0) { del = false; w = (w + 1) % words.length; }
-      c += del ? -1 : 1;
-      setTimeout(tick, del ? 40 : 85);
-    })();
-  }
-
-  /* photo tilt (desktop pointer only) */
-  const frame = document.getElementById('frame');
-  if (!reduce && matchMedia('(hover:hover)').matches) {
-    const photoArea = frame.parentElement;
-    let photoRect;
-    photoArea.addEventListener('pointerenter', () => { photoRect = frame.getBoundingClientRect(); });
-    photoArea.addEventListener('pointermove', e => {
-      if (!photoRect) return;
-      const x = (e.clientX - photoRect.left) / photoRect.width - .5;
-      const y = (e.clientY - photoRect.top) / photoRect.height - .5;
-      frame.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 14}deg)`;
-    }, {passive:true});
-    photoArea.addEventListener('pointerleave', () => {
-      photoRect = null;
-      frame.style.transform = '';
-    });
-  }
-
-  /* glass specular light follows cursor — only the hovered card is updated */
-  document.querySelectorAll('.glass').forEach(el => {
-    let rect;
-    el.addEventListener('pointerenter', () => { rect = el.getBoundingClientRect(); });
-    el.addEventListener('pointermove', e => {
-      if (!rect) return;
-      el.style.setProperty('--sx', (e.clientX - rect.left) + 'px');
-      el.style.setProperty('--sy', (e.clientY - rect.top) + 'px');
-    }, {passive:true});
-    el.addEventListener('pointerleave', () => { rect = null; });
-  });
-
-  /* sakura petals + twinkling stars */
-  const cv = document.getElementById('sky'), ctx = cv.getContext('2d');
-  let W, H, dpr;
-  const resize = () => {
-    // Rendering the decorative background at full 2× DPR is unnecessarily expensive on phones.
-    // 1.25× keeps it visually sharp while substantially reducing canvas work.
-    dpr = Math.min(devicePixelRatio || 1, 1.25);
-    W = innerWidth; H = innerHeight;
-    cv.width = W * dpr; cv.height = H * dpr;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  };
-  resize(); addEventListener('resize', resize);
-
-  const small = innerWidth < 700;
-  const petals = Array.from({ length: small ? 18 : 34 }, () => mk(true));
-  const stars = Array.from({ length: small ? 35 : 70 }, () => ({
-    x: Math.random(), y: Math.random() * .7, r: Math.random() * 1.3 + .3, p: Math.random() * 6.28
-  }));
-  const ptr = { x: -999, y: -999 };
-  let pointerQueued = false;
-  let nextPtrX = -999, nextPtrY = -999;
-  addEventListener('pointermove', e => {
-    nextPtrX = e.clientX; nextPtrY = e.clientY;
-    if (!pointerQueued) {
-      pointerQueued = true;
-      requestAnimationFrame(() => { ptr.x = nextPtrX; ptr.y = nextPtrY; pointerQueued = false; });
-    }
-  }, {passive:true});
-
-  function mk(init) {
-    return {
-      x: Math.random() * W, y: init ? Math.random() * H : -20,
-      s: Math.random() * 7 + 6, vy: Math.random() * .7 + .35, vx: Math.random() * .5 - .1,
-      a: Math.random() * 6.28, va: (Math.random() - .5) * .03, sw: Math.random() * 6.28,
-      c: ['#ff9fc2','#ff7fae','#e8579a','#c9a0ff'][Math.floor(Math.random() * 4)]
-    };
-  }
-  function petal(p) {
-    ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.c; ctx.globalAlpha = .85;
-    ctx.beginPath();
-    ctx.moveTo(0, -p.s);
-    ctx.bezierCurveTo(p.s, -p.s * .6, p.s * .8, p.s * .7, 0, p.s);
-    ctx.bezierCurveTo(-p.s * .8, p.s * .7, -p.s, -p.s * .6, 0, -p.s);
-    ctx.fill(); ctx.restore();
-  }
-  let t = 0;
-  let rafId = 0;
-  let lastFrame = 0;
-  const targetFrameMs = 1000 / (innerWidth < 700 ? 30 : 45);
-  function frameLoop(now = performance.now()) {
-    if (now - lastFrame < targetFrameMs) { rafId = requestAnimationFrame(frameLoop); return; }
-    lastFrame = now;
-    if (document.hidden) {
-      rafId = 0;
-      return;
-    }
-    t += targetFrameMs / 1000; ctx.clearRect(0, 0, W, H);
-    for (const s of stars) {
-      ctx.globalAlpha = .35 + .35 * Math.sin(t * 1.5 + s.p);
-      ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(s.x * W, s.y * H, s.r, 0, 6.28); ctx.fill();
-    }
-    for (const p of petals) {
-      if (!reduce) {
-        p.sw += .02; p.x += p.vx + Math.sin(p.sw) * .6; p.y += p.vy; p.a += p.va;
-        const dx = p.x - ptr.x, dy = p.y - ptr.y, d = Math.hypot(dx, dy);
-        if (d < 110) { p.x += dx / d * 2.2; p.y += dy / d * 1.2; }
-        if (p.y > H + 20 || p.x > W + 30 || p.x < -30) Object.assign(p, mk(false));
-      }
-      petal(p);
-    }
-    ctx.globalAlpha = 1;
-    if (!reduce) rafId = requestAnimationFrame(frameLoop);
-  }
-  frameLoop();
-  document.addEventListener('visibilitychange', () => {
-    if (!document.hidden && !reduce && !rafId) frameLoop();
-  });
-
-  /* lightweight scroll progress + back-to-top */
-  const progress = document.getElementById('scrollProgress');
-  const topBtn = document.querySelector('.to-top');
-  let scrollQueued = false;
-  function updateScrollUI() {
-    const max = document.documentElement.scrollHeight - innerHeight;
-    const ratio = max > 0 ? scrollY / max : 0;
-    progress.style.width = (ratio * 100) + '%';
-    topBtn.classList.toggle('show', scrollY > innerHeight * .7);
-    scrollQueued = false;
-  }
-  addEventListener('scroll', () => {
-    if (!scrollQueued) { scrollQueued = true; requestAnimationFrame(updateScrollUI); }
-  }, {passive:true});
-  updateScrollUI();
-})();
-</script>
-</body>
-                                                                 </html>
-
-  
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="kana">✦ しょろん · HSC 2026</div>
+   <h1>Tanvir <span>Ahmed</span></h1>
+   <div class="tag" id="tag"></div>
+   <p class="lead">Hi, I'm Tanvir, also known as <strong>Shoron</strong>. I'm a student from Bangladesh. I love photography, badminton and exploring new things, and I'm curious about computer science, aerospace and science.</p>
+   <div class="buttons">
+    <a class="btn primary" href="#connect">Connect with me</a>
+    <a class="btn" href="#hobbies">My hobbies</a>
+    <a class="btn" href="mailto:tanvir.shoron@outlook.com">Email me</a>
+   </div>
+  </div>
+  <div class="photo-card"><div class="frame"><img class="photo" src="data:image/jpeg;base64,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
