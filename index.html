@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Tanvir Ahmmed (Shoron)</title>
+<meta content="#000000" name="theme-color"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Tanvir Ahmmed","alternateName":"Shoron","sameAs":["https://github.com/tanvirshoron","https://www.linkedin.com/in/tanvirshoron","https://www.instagram.com/tanvir__shoron","https://x.com/tanvir__shoron"]}</script><meta content="Personal website of Tanvir Ahmmed (Shoron). Computer science, web development, space and photography." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&amp;family=Manrope:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#000;--bg2:#08080a;--fg:#f4f1f2;--mut:#8d8a8c;--ac:#74132a;--ac2:#a51d3d;--line:rgba(255,255,255,.1);--glass:rgba(14,14,16,.82);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="midnight"]{--bg:#03050d;--bg2:#070b18;--glass:rgba(10,14,30,.84);--line:rgba(160,180,255,.12)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px;height:auto}
+body{margin:0;background:var(--bg);color:var(--fg);font:300 17px/1.7 Manrope,system-ui,sans-serif;transition:background .6s;overflow-x:hidden}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:300;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ac2);outline-offset:3px;border-radius:6px}
+#fx{transform:translateZ(0);position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,footer{position:relative;z-index:1}
+section{max-width:1080px;margin:0 auto;padding:110px 24px}
+h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:40px}
+#loader{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center;font:300 clamp(1.6rem,5vw,2.6rem) Fraunces,serif;letter-spacing:.04em;transition:opacity .7s,visibility .7s}
+#loader span{animation:ld 1s ease both}
+#loader.off{opacity:0;visibility:hidden}
+@keyframes ld{from{opacity:0;filter:blur(8px)}to{opacity:1;filter:none}}
+nav{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:4px;padding:6px;background:var(--glass);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);border:1px solid var(--line);border-radius:999px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+nav a,nav button{font:400 14px Manrope,sans-serif;color:var(--mut);text-decoration:none;padding:8px 16px;border-radius:999px;background:none;border:0;cursor:pointer;transition:color .3s,background .3s}
+nav a:hover,nav button:hover{color:var(--fg);background:rgba(165,29,61,.18)}
+#menu{display:none}
+@media(max-width:720px){nav{width:calc(100% - 28px);justify-content:space-between}nav .l{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;flex-direction:column;background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:10px}nav .l.open{display:flex}nav .l a{padding:14px 18px;font-size:16px}#menu{display:block}}
+nav .l{display:flex;gap:2px}
+.hero{min-height:100svh;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:130px}
+.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);letter-spacing:-.02em}
+.alt{font-family:Fraunces,serif;font-size:1.4rem;color:var(--ac2);margin:14px 0 22px}
+.tag{font-size:1.15rem;color:#cfcbcd;max-width:30ch;margin:0 0 36px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:400;font-size:15px;border:1px solid var(--line);transition:transform .4s,box-shadow .4s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(165,29,61,.35)}
+.p{background:var(--ac);border-color:var(--ac2)}
+.s{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.35);}
+.stage{position:relative;width:min(100%,430px);aspect-ratio:1;margin:0 auto;display:grid;place-items:center}
+.stage::before{content:"";position:absolute;inset:8%;border-radius:50%;background:radial-gradient(circle,rgba(116,19,42,.5),transparent 68%);filter:blur(30px)}
+.ring{will-change:transform;position:absolute;inset:1%;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 62%,rgba(255,255,255,.38) 100%);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 1px),#000 calc(100% - 1px));mask:radial-gradient(farthest-side,transparent calc(100% - 1px),#000 calc(100% - 1px));animation:spin 90s linear infinite}
+.ring.b{inset:-7%;border-color:rgba(165,29,61,.28);border-style:dashed;animation-duration:220s;animation-direction:reverse;transform:rotate(60deg)}
+
+.ring.b::after{background:var(--ac2);box-shadow:0 0 12px var(--ac2);top:auto;bottom:10%;left:auto;right:12%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pic{position:relative;width:76%;aspect-ratio:1;border-radius:34%;overflow:hidden;border:1px solid rgba(255,255,255,.22);box-shadow:0 0 70px rgba(116,19,42,.5),0 30px 60px rgba(0,0,0,.7)}
+.pic img{width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.04) saturate(.92)}
+.pic::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(255,255,255,.1),transparent 40%,rgba(0,0,0,.35))}
+@media(max-width:820px){.hero{grid-template-columns:1fr;text-align:center;gap:30px;padding-top:110px}.hero .stage{order:-1;width:min(78%,320px)}.tag{margin-inline:auto}.btns{justify-content:center}}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 18px;color:#cfcbcd}
+.chips{display:flex;flex-wrap:wrap;gap:10px;align-content:start}
+.chips span{padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:var(--glass);font-size:14px;transition:border-color .3s}
+.chips span:hover{border-color:var(--ac2)}
+@media(max-width:720px){.about{grid-template-columns:1fr}}
+.tl{position:relative;margin-left:8px;padding-left:34px;border-left:1px solid var(--line)}
+.ev{position:relative;margin-bottom:28px;padding:22px 26px;background:var(--glass);border:1px solid var(--line);border-radius:20px;}
+.ev::before{content:"";position:absolute;left:-40px;top:30px;width:11px;height:11px;border-radius:50%;background:var(--ac2);box-shadow:0 0 14px var(--ac2)}
+.ev b{font:300 1.8rem Fraunces,serif;display:block}
+.ev p{margin:4px 0 0;color:var(--mut)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s}
+.rv.in{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{padding:26px;background:var(--glass);border:1px solid var(--line);border-radius:22px;}
+.card h3{font-size:1.35rem;margin-bottom:16px}
+.sk{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:15px}
+.sk em{font-style:normal;font-size:12.5px;color:var(--ac2);border:1px solid rgba(165,29,61,.5);border-radius:999px;padding:2px 11px}
+.note{color:var(--mut);font-size:14px;margin-top:22px}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.links a{display:flex;flex-direction:column;padding:20px 22px;background:var(--glass);border:1px solid var(--line);border-radius:18px;text-decoration:none;transition:border-color .3s,transform .4s,box-shadow .4s}
+.links a:hover{border-color:var(--ac2);transform:translateY(-3px);box-shadow:0 10px 30px rgba(165,29,61,.22)}
+.links small{color:var(--mut);font-size:13px;overflow-wrap:anywhere}
+.links b{font-weight:400}
+footer{text-align:center;padding:50px 24px calc(60px + env(safe-area-inset-bottom,0px));color:var(--mut);font-size:14px;border-top:1px solid var(--line);max-width:1080px;margin:0 auto}
+footer button{background:none;border:0;color:var(--mut);font:inherit;cursor:pointer;padding:2px 4px}
+footer button[aria-pressed=true]{color:var(--fg)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+
+nav{max-width:calc(100% - 20px)}nav .l{overflow-x:auto;scrollbar-width:none}nav .l::-webkit-scrollbar{display:none}nav a,nav button{white-space:nowrap;padding:8px 11px;font-size:13px}
+@media(max-width:720px){nav .l{max-height:70vh;overflow:auto}}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card.ph{border-style:dashed;color:var(--mut)}.card p{margin:0;color:var(--mut);font-size:15px}.card h3 small{font:400 12px Manrope;color:var(--ac2);margin-left:8px}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.fl button,.tabs button,.bt{font:400 14px Manrope;color:var(--mut);background:var(--glass);border:1px solid var(--line);border-radius:999px;padding:7px 15px;cursor:pointer;transition:.3s}
+.fl button[aria-pressed=true],.tabs button[aria-pressed=true],.fl button:hover,.bt:hover{color:var(--fg);border-color:var(--ac2)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.gal div{aspect-ratio:4/5;border:1px solid var(--line);border-radius:16px;overflow:hidden;position:relative;background:linear-gradient(160deg,rgba(255,255,255,.03),transparent);transition:transform .35s,border-color .35s,box-shadow .35s}.gal div:hover{transform:translateY(-4px);border-color:var(--ac2);box-shadow:0 18px 50px rgba(0,0,0,.28)}.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}.gal div:hover img{transform:scale(1.04)}.gal .gcpt{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 13px;background:linear-gradient(transparent,rgba(0,0,0,.82));color:var(--fg)}.gal .gcpt b{display:block;font-size:14px}.gal .gcpt small{display:block;margin-top:3px;color:#aab3c2;font-size:11px}
+.gal div:nth-child(3n){aspect-ratio:1}
+.ol{list-style:none;margin:0;padding:0;columns:2;gap:14px}.ol li{padding:9px 0;border-top:1px solid var(--line);break-inside:avoid;font-size:15px}
+@media(max-width:560px){.ol{columns:1}}
+h3.s3{font-size:1.5rem;margin:44px 0 16px}
+.lab{display:inline-block;font:500 11px Manrope;letter-spacing:.06em;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--mut);vertical-align:middle;margin-left:8px}
+.lab.ok{color:#9fd8b0;border-color:rgba(159,216,176,.4)}.lab.no{color:var(--ac2);border-color:rgba(165,29,61,.5)}
+.dash{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.dash .card{padding:20px}.dash b{display:block;font:300 1.7rem Fraunces,serif;margin:6px 0 2px}.dash small{color:var(--mut)}
+#pl{display:flex;flex-wrap:wrap;gap:8px}#pl button.on{border-color:var(--ac2);color:var(--fg)}
+#gc{width:100%;max-width:300px;aspect-ratio:3/4;border:1px solid var(--line);border-radius:18px;background:rgba(0,0,0,.4);touch-action:none;display:block}
+.gw{display:flex;gap:22px;flex-wrap:wrap;align-items:center}.gb{display:flex;gap:10px;margin-top:12px}.gb .bt{padding:12px 24px}
+#chat{height:300px;overflow:auto;display:flex;flex-direction:column;gap:12px;padding:6px 2px}
+.msg{max-width:85%;padding:12px 16px;border-radius:18px;font-size:15px;border:1px solid var(--line);background:rgba(255,255,255,.04);white-space:pre-wrap}.msg.u{align-self:flex-end;background:rgba(116,19,42,.4);border-color:rgba(165,29,61,.5)}
+.msg small{display:block;color:var(--mut);font-size:11px;margin-top:4px}.msg .bt{padding:1px 9px;font-size:11px;margin-left:8px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.cf{display:flex;gap:10px;margin-top:14px}.cf input,.gf input,.gf textarea{flex:1;font:400 15px Manrope;color:var(--fg);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:14px;padding:12px 16px;width:100%}
+.q{font:300 clamp(1.6rem,4vw,2.5rem) Fraunces,serif;margin:0 0 28px;max-width:24ch}
+details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-size:1.05rem}details p{margin:8px 0 0;color:var(--mut)}
+.gf{display:grid;gap:10px;max-width:520px}
+#lofi{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+#lp{display:none;padding:14px 16px;background:var(--glass);border:1px solid var(--line);border-radius:18px;font-size:13px;color:var(--mut);gap:10px;align-items:center}#lp.open{display:flex}
+#lt{width:46px;height:46px;border-radius:50%;background:var(--ac);border:1px solid var(--ac2);color:#fff;cursor:pointer;font-size:18px}
+#toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%);z-index:90;padding:12px 22px;border-radius:999px;background:var(--glass);border:1px solid var(--ac2);opacity:0;pointer-events:none;transition:opacity .8s}#toast.on{opacity:1}
+@media(max-width:720px){nav .l{display:none}nav .l.open{display:flex}}
+#lp{flex-wrap:wrap;max-width:300px;justify-content:flex-end}#lp input{width:90px;accent-color:#a51d3d}
+#gbl{display:grid;gap:12px;margin-top:24px;max-width:520px}#gbl p{margin:6px 0 0}
+</style>
+</head>
+<body>
+<div id="loader"><span>Tanvir Ahmmed</span></div>
+<canvas aria-hidden="true" id="fx"></canvas>
+<nav aria-label="Main">
+<a href="#home" style="color:var(--fg)">Tanvir</a>
+<div class="l" id="links"><a href="#home">Home</a><a href="#about">About</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#photography">Photography</a><a href="#movies">Movies</a><a href="#books">Books</a><a href="#space">Space Lab</a><a href="#aethryn">AETHRYN</a><a href="#family">Family</a><a href="#contact">Contact</a></div>
+<button aria-expanded="false" aria-label="Menu" id="menu">Menu</button>
+</nav>
+<main>
+<section class="hero" id="home">
+<div>
+<h1>Tanvir Ahmmed</h1>
+<div class="alt">Shoron / স্মরণ</div>
+<p class="tag">Exploring ideas beyond the ordinary.</p>
+<div class="btns"><a class="btn p" href="#about">Explore My World</a><a class="btn s" href="#aethryn">Meet AETHRYN</a></div>
+</div>
+<div class="stage"><div class="ring"></div>
+<div class="pic"><img alt="Portrait of Tanvir Ahmmed" src="media/profile.jpg"/></div></div>
+</section>
+<section class="rv" id="about">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I'm Tanvir, a student from Saidpur, Bangladesh. I'm drawn to anything that makes me ask how it works, from the code behind a website to the physics behind a rocket.</p>
+<p>I'm drawn to space, aerospace and science, and I look up at the night sky more than I probably should. I also enjoy photography, mostly of the sky, nature and quiet places. Technology, web development and computer science are part of what I like to explore too.</p>
+<p>I'm still early in the journey. This site is where I keep what I'm learning.</p>
+</div>
+<div class="chips"><span>Science</span><span>Aerospace</span><span>Space</span><span>Nature</span><span>Photography</span><span>World exploration</span><span>Learning</span><span>Creativity</span><span>Technology</span><span>Web Development</span><span>Computer Science</span></div>
+</div>
+</section>
+<section id="journey">
+<h2 class="rv">Journey</h2>
+<div class="tl">
+<div class="ev rv"><b>2019</b><p>Joined Lions School and College, Saidpur.</p></div>
+<div class="ev rv"><b>2021</b><p>JSC</p></div>
+<div class="ev rv"><b>2024</b><p>SSC</p></div>
+<div class="ev rv"><b>2026</b><p>HSC, and completed the school and college journey.</p></div>
+</div>
+</section>
+<section id="skills">
+<h2 class="rv">Skills</h2>
+<div class="grid">
+<div class="card rv"><h3>Technology</h3><div class="sk">Programming<em>Exploring</em></div><div class="sk">Computer Science<em>Exploring</em></div><div class="sk">Web Development<em>Exploring</em></div></div>
+<div class="card rv"><h3>Creative</h3><div class="sk">Photography<em>Developing</em></div><div class="sk">UI/UX<em>Exploring</em></div><div class="sk">Video Editing<em>Beginner</em></div></div>
+<div class="card rv"><h3>Communication</h3><div class="sk">English Speaking<em>Developing</em></div><div class="sk">Communication Skills<em>Developing</em></div></div>
+<div class="card rv"><h3>Exploration</h3><div class="sk">Aerospace<em>Exploring</em></div><div class="sk">Space<em>Exploring</em></div><div class="sk">Science<em>Exploring</em></div></div>
+</div>
+<p class="note">Labels are placeholders. Edit them to match your real level.</p>
+</section>
+<section id="projects"><h2 class="rv">Projects</h2><div class="cols rv">
+<div class="card"><h3>Current</h3><p><b style="color:var(--fg);font-weight:400">This website</b><br/>Personal site. HTML, CSS, JavaScript.<br/>Status: live, in progress.</p></div>
+<div class="card ph"><h3>Experimental</h3><p>Placeholder. Add a project name, description, tech and link.</p></div>
+<div class="card ph"><h3>Future</h3><p>Placeholder. Add something you plan to build.</p></div></div></section>
+<section id="photography"><h2 class="rv">Photography</h2><p class="q rv">A visual archive for the things that catch my attention.</p><div class="fl" id="pf"></div><div class="gal" id="pg"></div><p class="note">These are visual placeholders for now. Replace the image paths in <b>data.json</b> with your own photos anytime.</p></section>
+<section id="movies"><h2 class="rv">Movies</h2>
+<h3 class="s3" style="margin-top:0">Genres</h3><div class="chips" id="gn"></div>
+<h3 class="s3">Favorite story types</h3><div class="chips" id="st"></div>
+<div class="cols" style="margin-top:44px"><div><h3 class="s3" style="margin-top:0">Favorite actors</h3><ol class="ol" id="ac" style="columns:1"></ol></div><div><h3 class="s3" style="margin-top:0">Favorite actresses</h3><ol class="ol" id="as" style="columns:1"></ol></div></div>
+<h3 class="s3">Favorite things</h3><div class="grid" id="fv"></div></section>
+<section id="books"><h2 class="rv">Books</h2><div class="grid" id="bk"></div><p class="note">No books added yet. Shelves stay empty rather than guessing.</p></section>
+<section id="space"><h2 class="rv">Space Lab</h2>
+<h3 class="s3" style="margin-top:0">Planets<span class="lab">STATIC REFERENCE</span></h3><div id="pl"></div><div class="card" id="pi" style="margin-top:14px">Pick a planet.</div>
+<h3 class="s3">Dashboard</h3><div class="dash">
+<div class="card"><small>Local time<span class="lab ok">LIVE</span></small><b id="d1">–</b><small id="d2"></small></div>
+<div class="card"><small>Moon phase<span class="lab ok">COMPUTED</span></small><b id="d3">–</b><small id="d4"></small></div>
+<div class="card"><small>Weather<span class="lab no">UNAVAILABLE</span></small><b>–</b><small>No data source connected</small></div>
+<div class="card"><small>ISS position<span class="lab no">UNAVAILABLE</span></small><b>–</b><small>No data source connected</small></div>
+<div class="card" id="wc"><small>World clocks<span class="lab ok">LIVE</span></small></div></div>
+<h3 class="s3">Orbit dodge</h3><div class="gw"><div><canvas aria-label="Asteroid dodging game" height="400" id="gc" width="300"></canvas><div class="gb"><button aria-label="Left" class="bt" id="gl">◀</button><button aria-label="Right" class="bt" id="gr">▶</button><button class="bt" id="gs">Start</button></div></div>
+<p class="note" style="max-width:30ch;margin:0">Arrow keys, A/D, or drag. Dodge the asteroids.<br/>Score: <b id="sc">0</b></p></div></section>
+<section id="aethryn"><h2 class="rv">AETHRYN</h2><p class="q">Intelligence beyond the ordinary.</p>
+<div class="card"><div class="tabs" id="md"></div><div aria-live="polite" id="chat"></div>
+<div class="cf"><input aria-label="Message" id="ci" placeholder="Ask anything"/><button class="bt" id="cs">Send</button><button class="bt" id="cc">Clear</button></div>
+<p class="note" style="margin-bottom:0">Tanvir Mode answers from this page only. General and Explore modes use AI and have no live data or internet.</p></div></section>
+<section id="philosophy"><h2 class="rv">Philosophy</h2><p class="q rv">Simplicity is the ultimate sophistication.</p><div class="chips" id="ph"></div>
+<h3 class="s3">Fun facts</h3><div id="ff"></div><button class="bt" id="rf" style="margin-top:16px">Random fact</button><p class="note" id="rfo"></p></section>
+<section id="family"><h2 class="rv">Family</h2><p class="q rv">The people and values behind the person.</p><p style="color:var(--mut);margin:0 0 20px">A quiet part of my universe.</p><div class="chips"><span>Love</span><span>Support</span><span>Respect</span><span>Roots</span></div></section>
+<section id="contact">
+<h2 class="rv">Contact</h2>
+<div class="links rv">
+<a href="mailto:tanvir.shoron@outlook.com"><b>Email</b><small>tanvir.shoron@outlook.com</small></a>
+<a href="https://github.com/tanvirshoron" rel="noopener" target="_blank"><b>GitHub</b></a>
+<a href="https://www.linkedin.com/in/tanvirshoron" rel="noopener" target="_blank"><b>LinkedIn</b></a>
+<a href="https://www.instagram.com/tanvir__shoron" rel="noopener" target="_blank"><b>Instagram</b></a>
+<a href="https://x.com/tanvir__shoron" rel="noopener" target="_blank"><b>X</b></a>
+<a href="https://www.facebook.com/profile.php?id=61592938436798" rel="noopener" target="_blank"><b>Facebook</b></a>
+</div>
+</section>
+<section id="guestbook" style="padding-top:0"><h2 class="rv">Guestbook</h2><div class="gf"><input aria-label="Name" id="gbn" maxlength="40" placeholder="Name"/><textarea aria-label="Message" id="gbm" maxlength="200" placeholder="Leave a message" rows="3"></textarea><input aria-hidden="true" autocomplete="off" id="gbh" style="position:absolute;left:-9999px;width:1px" tabindex="-1"/><button class="bt" id="gbs" style="justify-self:start;padding:12px 26px">Sign</button></div><p class="note" id="gbt"></p><div id="gbl"></div></section>
+</main>
+<footer>© Tanvir Ahmmed<br/><button aria-pressed="true" data-t="dark">Dark</button> · <button aria-pressed="false" data-t="midnight">Midnight</button></footer>
+<div id="lofi"><div id="lp"><span id="ln">Rise Up · TheFatRat</span><button class="bt" id="lb">Play</button><input aria-label="Progress" id="lg" max="100" min="0" type="range" value="0"/><input aria-label="Volume" id="lv" max="100" min="0" type="range" value="70"/></div><button aria-label="Music player" id="lt">♪</button></div><audio id="au" loop="" preload="none" src="media/music.mp3"></audio><div id="toast" role="status"></div>
+<script>
+var R=document.documentElement,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function setT(t){R.dataset.theme=t;document.querySelectorAll('footer button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.t===t)});try{localStorage.setItem('theme',t)}catch(e){}}
+try{var s=localStorage.getItem('theme');if(s==='dark'||s==='midnight')setT(s)}catch(e){}
+document.querySelectorAll('footer button').forEach(function(b){b.onclick=function(){setT(b.dataset.t)}});
+var m=document.getElementById('menu'),l=document.getElementById('links');
+m.onclick=function(){var o=l.classList.toggle('open');m.setAttribute('aria-expanded',o)};
+l.onclick=function(){l.classList.remove('open');m.setAttribute('aria-expanded',false)};
+setTimeout(function(){document.getElementById('loader').classList.add('off')},rm?200:1300);
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+var c=document.getElementById('fx'),x=c.getContext('2d'),P=[],W,H,my=0;
+function init(){var d=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);
+var n=(navigator.hardwareConcurrency||4)<=4||W<700?32:60;P=[];for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.2+.4,vx:(Math.random()-.5)*.14,vy:(Math.random()-.5)*.14,a:Math.random()*.4+.15,t:Math.random()*6,z:Math.random()*.5+.2})}
+function draw(){x.clearRect(0,0,W,H);var sy=scrollY;for(var i=0;i<P.length;i++){var p=P[i];if(!rm){p.x+=p.vx;p.y+=p.vy;p.t+=.012;if(p.x<-5)p.x=W+5;if(p.x>W+5)p.x=-5;if(p.y<-5)p.y=H+5;if(p.y>H+5)p.y=-5}
+var yy=((p.y-sy*p.z*.08)%H+H)%H,al=p.a*(.75+.25*Math.sin(p.t));x.beginPath();x.fillStyle='rgba(255,255,255,'+al+')';x.arc(p.x,yy,p.r,0,6.283);x.fill();x.fillStyle='rgba(255,255,255,'+al*.12+')';x.beginPath();x.arc(p.x,yy,p.r*3.2,0,6.283);x.fill()}
+if(!rm&&!document.hidden)requestAnimationFrame(draw)}
+init();draw();addEventListener('resize',function(){init();if(rm)draw()});
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&!rm)draw()});
+
+var g=function(i){return document.getElementById(i)};
+function chips(id,a){var e=g(id);a.forEach(function(s){var n=document.createElement('span');n.textContent=s;e.appendChild(n)})}
+function lst(id,a){var e=g(id);a.forEach(function(s){var n=document.createElement('li');n.textContent=s;e.appendChild(n)})}
+var SITE_DATA=null;
+function applyMedia(d){var m=d&&d.media||{};var im=document.querySelector('.pic img');if(im&&m.profile_image)im.src=m.profile_image;var au=document.getElementById('au');if(au&&m.music)au.src=m.music;var ln=document.getElementById('ln');if(ln&&m.music_title)ln.textContent=m.music_title;var im2=document.querySelector('.pic img');if(im2&&m.profile_alt)im2.alt=m.profile_alt;}
+var FALLBACK={media:{profile_image:'media/profile.jpg',profile_alt:'Portrait of Tanvir Ahmmed',music:'media/music.mp3',music_title:'Rise Up · TheFatRat'},profile:{name:'Tanvir Ahmmed',nickname:'Shoron',nickname_bn:'স্মরণ',location:'Saidpur, Bangladesh',email:'tanvir.shoron@outlook.com'},about:{chips:['Science','Aerospace','Space','Nature','Photography','World exploration','Learning','Creativity','Technology','Web Development','Computer Science']},education:[{year:'2019',text:'Joined Lions School and College, Saidpur.'},{year:'2021',text:'JSC'},{year:'2024',text:'SSC'},{year:'2026',text:'HSC, and completed the school and college journey.'}],family:{father:{name:'Md Anisul Islam',nickname:'Anis'},mother:{name:'Most. Masuda Begum',nickname:'Sweety'},siblings:[{name:'Al Afifa Shorone',relation:'elder sister'},{name:'Tanvir Ahmmed',relation:'middle child'},{name:'Araf Mahmud',nickname:'Sweet',relation:'younger brother'}]},movies:{genres:['Comedy','Thriller','Sci-Fi','Horror','Romance','Adventure','Time Travel'],story_types:['Plot twists','Mind-blowing endings','Mystery','Intelligent characters','Genius characters','Comedy','Time travel','Alternate reality'],actors:['Shah Rukh Khan','Farhan Ahmed Jovan','Sushant Singh Rajput','Tom Holland','Cillian Murphy','Ranbir Kapoor','Ayushmann Khurrana','Apurba','Niloy Alamgir','Leonardo DiCaprio'],actresses:['Kiara Advani','Dure Fishan','Wamiqa Gabbi','Huma Qureshi','Samantha Lorraine','Sadie Sink','Keya Payel','Sabila Nur','Safa Kabir','Nusrat Imrose Tisha']},philosophy:['Curiosity','Simplicity','Learning','Exploration','Creativity','Growth'],facts:['Enjoys photography.','Enjoys badminton.','Interested in aerospace and space.','Likes nature.','Enjoys foggy mornings.','Likes clear autumn skies.','Enjoys lo-fi music.','Likes time-travel stories.','Enjoys discovering new things.']};
+function renderData(d){SITE_DATA=d||FALLBACK;applyMedia(SITE_DATA);
+var x=SITE_DATA.movies||FALLBACK.movies;chips('gn',x.genres||[]);chips('st',x.story_types||[]);lst('ac',x.actors||[]);lst('as',x.actresses||[]);chips('ph',SITE_DATA.philosophy||FALLBACK.philosophy);
+var facts=SITE_DATA.facts||FALLBACK.facts;g('ff').textContent='';facts.forEach(function(f,i){var q=document.createElement('details');q.innerHTML='<summary></summary><p></p>';q.firstChild.textContent='Fact '+(i+1);q.lastChild.textContent=f;g('ff').appendChild(q)});
+var ph=SITE_DATA.photography||{};var pf=g('pf'),pg=g('pg');if(pf&&pg){pf.textContent='';pg.textContent='';var all=document.createElement('button');all.type='button';all.textContent='All';all.setAttribute('aria-pressed','true');pf.appendChild(all);(ph.filters||[]).filter(function(x){return x!=='All'}).forEach(function(x){var b=document.createElement('button');b.type='button';b.textContent=x;b.setAttribute('aria-pressed','false');pf.appendChild(b)});(ph.items||[]).forEach(function(it){var card=document.createElement('div');card.dataset.category=it.title||'';var im=document.createElement('img');im.src=it.image;im.alt=(it.title||'Photography')+' visual';im.loading='lazy';var cap=document.createElement('div');cap.className='gcpt';var b=document.createElement('b');b.textContent=it.title||'';var sm=document.createElement('small');sm.textContent=it.subtitle||'';cap.appendChild(b);cap.appendChild(sm);card.appendChild(im);card.appendChild(cap);pg.appendChild(card)});Array.prototype.forEach.call(pf.querySelectorAll('button'),function(btn){btn.onclick=function(){Array.prototype.forEach.call(pf.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed','false')});btn.setAttribute('aria-pressed','true');var cat=btn.textContent;Array.prototype.forEach.call(pg.children,function(card){card.style.display=(cat==='All'||card.dataset.category===cat)?'':'none'});};});}
+
+var p=SITE_DATA.profile||{};document.querySelector('.hero .tag').textContent=p.tagline||document.querySelector('.hero .tag').textContent;
+var ab=SITE_DATA.about;if(ab){var ap=document.querySelector('#about .about>div:first-child');if(ap){ap.textContent='';(ab.paragraphs||[]).forEach(function(t){var e=document.createElement('p');e.textContent=t;ap.appendChild(e)});}var ac=document.querySelector('#about .chips');if(ac){ac.textContent='';chipsInto(ac,ab.chips||[]);}}
+var ed=SITE_DATA.education;if(ed){var tl=g('journey').querySelector('.tl');tl.textContent='';ed.forEach(function(e){var d=document.createElement('div');d.className='ev rv';d.innerHTML='<b></b><p></p>';d.firstChild.textContent=e.year;d.lastChild.textContent=e.text;tl.appendChild(d)});}
+var sk=SITE_DATA.skills;if(sk){var grid=g('skills').querySelector('.grid');grid.textContent='';sk.forEach(function(c){var card=document.createElement('div');card.className='card rv';var h=document.createElement('h3');h.textContent=c.title;card.appendChild(h);(c.items||[]).forEach(function(it){var row=document.createElement('div');row.className='sk';row.textContent=it[0];var em=document.createElement('em');em.textContent=it[1];row.appendChild(em);card.appendChild(row)});grid.appendChild(card);});}
+var pr=SITE_DATA.projects;if(pr){var pg=g('projects').querySelector('.cols');pg.textContent='';pr.forEach(function(x){var card=document.createElement('div');card.className='card'+(x.title==='Experimental'||x.title==='Future'?' ph':'');var h=document.createElement('h3');h.textContent=x.title;card.appendChild(h);var p=document.createElement('p');if(x.name){var b=document.createElement('b');b.style.cssText='color:var(--fg);font-weight:400';b.textContent=x.name;p.appendChild(b);p.appendChild(document.createElement('br'));}p.appendChild(document.createTextNode(x.description||''));if(x.status){p.appendChild(document.createElement('br'));p.appendChild(document.createTextNode('Status: '+x.status));}card.appendChild(p);pg.appendChild(card);});}
+var fam=SITE_DATA.family;if(fam){var fs=g('family');var old=fs.querySelector('.family-data');if(old)old.remove();var box=document.createElement('div');box.className='family-data chips';[fam.father,fam.mother].forEach(function(x){var sp=document.createElement('span');sp.textContent=x.name+(x.nickname?' ('+x.nickname+')':'');box.appendChild(sp)});(fam.siblings||[]).forEach(function(x){var sp=document.createElement('span');sp.textContent=x.name+(x.nickname?' ('+x.nickname+')':'');box.appendChild(sp)});fs.appendChild(box);}
+var c=SITE_DATA.contact||{};[['Email',c.email,'mailto:'],['GitHub',c.github,''],['LinkedIn',c.linkedin,''],['Instagram',c.instagram,''],['X',c.x,''],['Facebook',c.facebook,'']].forEach(function(x,i){var a=g('contact').querySelectorAll('.links a')[i];if(a&&x[1]){a.href=x[2]+x[1];var sm=a.querySelector('small');if(sm)sm.textContent=x[1]}});
+}
+function chipsInto(e,a){a.forEach(function(s){var n=document.createElement('span');n.textContent=s;e.appendChild(n)})}
+fetch('data.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw Error('data');return r.json()}).then(renderData).catch(function(){renderData(FALLBACK)});
+function tick(){var d=new Date();g('d1').textContent=d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});g('d2').textContent=d.toLocaleDateString([],{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+var a=((d-Date.UTC(2000,0,6,18,14))/864e5)%29.530588;if(a<0)a+=29.530588;var n=['New Moon','Waxing Crescent','First Quarter','Waxing Gibbous','Full Moon','Waning Gibbous','Last Quarter','Waning Crescent'];g('d3').textContent=n[Math.round(a/29.530588*8)%8];g('d4').textContent='Age about '+a.toFixed(1)+' days';
+[['Dhaka','Asia/Dhaka'],['London','Europe/London'],['New York','America/New_York'],['Tokyo','Asia/Tokyo']].forEach(function(z,i){var e=g('w'+i);if(!e){e=document.createElement('div');e.id='w'+i;e.style.cssText='display:flex;justify-content:space-between;padding:5px 0;font-size:14px';g('wc').appendChild(e)}e.textContent=z[0]+'  '+d.toLocaleTimeString([],{timeZone:z[1],hour:'2-digit',minute:'2-digit'})})}
+tick();setInterval(tick,1000);
+(function(){var cv=g('gc'),cx=cv.getContext('2d'),run=0,sx=150,ob=[],sc=0,k={};
+function end(){run=0;g('gs').textContent='Restart'}
+function step(){if(!run)return;cx.clearRect(0,0,300,400);if(k.l)sx-=4.5;if(k.r)sx+=4.5;sx=Math.max(14,Math.min(286,sx));
+if(Math.random()<.04+sc/60000)ob.push({x:Math.random()*280+10,y:-12,r:Math.random()*9+6,v:Math.random()*1.5+1.6});
+cx.fillStyle='#f4f1f2';cx.beginPath();cx.moveTo(sx,372);cx.lineTo(sx-11,394);cx.lineTo(sx+11,394);cx.fill();
+cx.strokeStyle='#a51d3d';cx.lineWidth=2;
+ob=ob.filter(function(o){o.y+=o.v;cx.beginPath();cx.arc(o.x,o.y,o.r,0,6.283);cx.stroke();if(Math.hypot(o.x-sx,o.y-384)<o.r+7)end();return o.y<415});
+sc++;g('sc').textContent=Math.floor(sc/10);requestAnimationFrame(step)}
+g('gs').onclick=function(){sx=150;ob=[];sc=0;run=1;g('gs').textContent='Playing';step()};
+function bind(id,key){var b=g(id);['pointerdown'].forEach(function(e){b.addEventListener(e,function(){k[key]=1})});['pointerup','pointerleave','pointercancel'].forEach(function(e){b.addEventListener(e,function(){k[key]=0})})}
+bind('gl','l');bind('gr','r');
+cv.addEventListener('pointermove',function(e){if(run&&e.buttons|| run&&e.pointerType==='touch'){sx=(e.clientX-cv.getBoundingClientRect().left)/cv.clientWidth*300}});
+addEventListener('keydown',function(e){var m={ArrowLeft:'l',a:'l',ArrowRight:'r',d:'r'}[e.key];if(m&&run){k[m]=1;e.preventDefault()}});
+addEventListener('keyup',function(e){var m={ArrowLeft:'l',a:'l',ArrowRight:'r',d:'r'}[e.key];if(m)k[m]=0})})();
+var mode='Tanvir',hist=[];
+['Tanvir','General','Explore'].forEach(function(m,i){var b=document.createElement('button');b.textContent=m+' Mode';b.setAttribute('aria-pressed',i==0);b.onclick=function(){mode=m;[].forEach.call(g('md').children,function(x){x.setAttribute('aria-pressed',x===b)})};g('md').appendChild(b)});
+function add(t,u,type){var d=document.createElement('div');d.className='msg'+(u?' u':'');var s=document.createElement('span');d.appendChild(s);var tm=document.createElement('small');tm.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});d.appendChild(tm);g('chat').appendChild(d);
+function fin(){if(!u){var c=document.createElement('button');c.className='bt';c.textContent='Copy';c.onclick=function(){try{navigator.clipboard.writeText(t)}catch(e){}};tm.appendChild(c)}g('chat').scrollTop=1e9}
+if(u||type||matchMedia('(prefers-reduced-motion:reduce)').matches){s.textContent=t;fin();return}
+var i=0,iv=setInterval(function(){s.textContent=t.slice(0,++i);g('chat').scrollTop=1e9;if(i>=t.length){clearInterval(iv);fin()}},14)}
+function ans(q){q=q.toLowerCase();var d=SITE_DATA||FALLBACK,p=d.profile||{};
+if(mode!=='Tanvir')return 'This mode needs a secure backend with an API key. None is connected, so I cannot answer general questions yet.';
+if(/family|father|dad|mother|mom|sister|brother|বাবা|মা|বোন|ভাই|পরিবার/.test(q)){var f=d.family||{};var ss=(f.siblings||[]).map(function(x){return x.name+(x.nickname?' ('+x.nickname+')':'')+' — '+x.relation}).join('; ');return 'Tanvir Ahmmed is the middle child. Father: '+f.father.name+' ('+f.father.nickname+'). Mother: '+f.mother.name+' ('+f.mother.nickname+'). Siblings: '+ss+'.';}
+if(/educat|school|college|study|hsc|ssc/.test(q)){return (d.education||[]).map(function(x){return x.year+': '+x.text}).join(' ');}
+if(/contact|email|mail|github|social|reach/.test(q))return 'Email: '+(p.email||'Not available')+'. Other links are in the Contact section.';
+if(/interest|like|love|hobby|space|photo/.test(q))return 'Tanvir is interested in '+((d.about&&d.about.chips)||[]).join(', ')+'.';
+if(/who|name|shoron/.test(q))return p.name+', also known as '+p.nickname+' ('+p.nickname_bn+'), a student from '+p.location+'.';
+return 'I only know what is verified in the website data. Try asking about education, interests, family or contact.'}
+var AI_URL='https://aethryn.hello-tanvirshoron.workers.dev';/* paste your Cloudflare Worker URL here */
+var SM=null,hs=[];
+if(window.claude&&claude.use)claude.use('sample').then(function(s){SM=s}).catch(function(){});
+function send(){var v=g('ci').value.trim();if(!v)return;g('ci').value='';add(v,1);
+if(mode==='Tanvir'){setTimeout(function(){add(ans(v),0)},350);return}
+if(!SM&&!AI_URL){add('General and Explore modes need a signed-in claude.ai session. Sign in and reopen this page, or use Tanvir Mode.',0,1);return}
+hs.push({role:'user',content:v});hs=hs.slice(-8);while(hs[0].role!=='user')hs.shift();
+add('Thinking…',0,1);
+var sys='You are AETHRYN, an AI assistant on the personal website of Tanvir Ahmmed (Shoron). Mode: '+(mode==='Explore'?'Explore. Give a deeper, well-structured explanation in short labelled parts.':'General. Give a clear, accurate, concise answer.')+' You can help with any subject: science, technology, programming, history, education, space, aerospace, general knowledge. You have no internet or live data, so say so for current events, prices or weather instead of guessing. Never invent facts about Tanvir; personal facts are maintained in the website data and should be answered only when supplied by Tanvir Mode. Reply in the language the user writes in (English, Bangla or Banglish). Use plain text with no markdown symbols.';
+var tr=hs.map(function(x){return{role:x.role,content:x.content}});tr[0].content=sys+'\n\nUser: '+tr[0].content;
+(AI_URL?fetch(AI_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({mode:mode,messages:hs})}).then(function(r){if(!r.ok)throw{code:'http'};return r.json()}):SM(tr,{cache:false})).then(function(r){g('chat').lastChild.remove();hs.push({role:'assistant',content:r.text});add(r.text,0,1)}).catch(function(e){g('chat').lastChild.remove();add(e&&e.code==='not_granted'?'Permission was not granted, so AI mode is off.':'AI is unavailable right now. Try again later.',0,1)})}
+g('cs').onclick=send;g('ci').onkeydown=function(e){if(e.key==='Enter')send()};g('cc').onclick=function(){g('chat').textContent='';hs=[]};
+add('Hi, I am AETHRYN. Ask me about Tanvir.',0);
+var FF=['Enjoys photography.','Enjoys badminton.','Interested in aerospace and space.','Likes nature.','Enjoys foggy mornings.','Likes clear autumn skies.','Enjoys lo-fi music.','Likes time-travel stories.','Enjoys discovering new things.'];
+FF.forEach(function(f,i){var d=document.createElement('details');d.innerHTML='<summary></summary><p></p>';d.firstChild.textContent='Fact '+(i+1);d.lastChild.textContent=f;g('ff').appendChild(d)});
+g('rf').onclick=function(){g('rfo').textContent=FF[Math.floor(Math.random()*FF.length)]};
+g('lt').onclick=function(){g('lp').classList.toggle('open')};
+var au=g('au');au.volume=.7;
+g('lb').onclick=function(){au.paused?(au.play().catch(function(){}),g('lb').textContent='Pause'):(au.pause(),g('lb').textContent='Play')};
+au.ontimeupdate=function(){if(au.duration)g('lg').value=au.currentTime/au.duration*100};
+g('lg').oninput=function(){if(au.duration)au.currentTime=g('lg').value/100*au.duration};
+g('lv').oninput=function(){au.volume=g('lv').value/100};
+var KC='ArrowUp,ArrowUp,ArrowDown,ArrowDown,ArrowLeft,ArrowRight,ArrowLeft,ArrowRight,b,a'.split(','),ki=0;
+addEventListener('keydown',function(e){ki=e.key===KC[ki]?ki+1:0;if(ki===KC.length){ki=0;var t=g('toast');t.textContent='Signal received. You found the hidden orbit.';t.classList.add('on');setTimeout(function(){t.classList.remove('on')},3500)}});
+function cl(){l.classList.remove('open');m.setAttribute('aria-expanded',false)}
+document.addEventListener('click',function(e){if(!e.target.closest('nav'))cl()});
+addEventListener('keydown',function(e){if(e.key==='Escape')cl()});
+
+(function(){var base=AI_URL?AI_URL.replace(/\/$/,'')+'/guestbook':'';
+function st(s){g('gbt').textContent=s}
+function load(){fetch(base).then(function(r){return r.json()}).then(function(d){var l=g('gbl');l.textContent='';var a=d.items||[];a.forEach(function(m){var c=document.createElement('div');c.className='card';var h=document.createElement('b');h.style.fontWeight=400;h.textContent=m.name;var p=document.createElement('p');p.textContent=m.message;c.appendChild(h);c.appendChild(p);l.appendChild(c)});if(!a.length)st('No messages yet. Be the first.')}).catch(function(){st('Could not load messages.')})}
+if(!base){st('Guestbook is not connected yet.');g('gbn').disabled=g('gbm').disabled=g('gbs').disabled=true;return}
+load();
+g('gbs').onclick=function(){var n=g('gbn').value.trim(),m=g('gbm').value.trim();if(!n||m.length<2){st('Enter your name and a message.');return}
+g('gbs').disabled=true;st('Sending…');
+fetch(base,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,message:m,website:g('gbh').value})}).then(function(r){return r.json().then(function(d){return{ok:r.ok,d:d}})}).then(function(x){g('gbs').disabled=false;if(x.ok){g('gbm').value='';st('Thank you. Your message is posted.');load()}else st(x.d.error||'Could not send.')}).catch(function(){g('gbs').disabled=false;st('Could not send. Try again later.')})}})();
+</script>
+</body>
+</html>

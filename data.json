@@ -1,0 +1,284 @@
+{
+  "profile": {
+    "name": "Tanvir Ahmmed",
+    "nickname": "Shoron",
+    "nickname_bn": "স্মরণ",
+    "location": "Saidpur, Bangladesh",
+    "email": "tanvir.shoron@outlook.com",
+    "tagline": "Exploring ideas beyond the ordinary."
+  },
+  "about": {
+    "paragraphs": [
+      "I'm Tanvir, a student from Saidpur, Bangladesh. I'm drawn to anything that makes me ask how it works, from the code behind a website to the physics behind a rocket.",
+      "I'm drawn to space, aerospace and science, and I look up at the night sky more than I probably should. I also enjoy photography, mostly of the sky, nature and quiet places. Technology, web development and computer science are part of what I like to explore too.",
+      "I'm still early in the journey. This site is where I keep what I'm learning."
+    ],
+    "chips": [
+      "Science",
+      "Aerospace",
+      "Space",
+      "Nature",
+      "Photography",
+      "World exploration",
+      "Learning",
+      "Creativity",
+      "Technology",
+      "Web Development",
+      "Computer Science"
+    ]
+  },
+  "education": [
+    {
+      "year": "2019",
+      "text": "Joined Lions School and College, Saidpur."
+    },
+    {
+      "year": "2021",
+      "text": "JSC"
+    },
+    {
+      "year": "2024",
+      "text": "SSC"
+    },
+    {
+      "year": "2026",
+      "text": "HSC, and completed the school and college journey."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Technology",
+      "items": [
+        [
+          "Programming",
+          "Exploring"
+        ],
+        [
+          "Computer Science",
+          "Exploring"
+        ],
+        [
+          "Web Development",
+          "Exploring"
+        ]
+      ]
+    },
+    {
+      "title": "Creative",
+      "items": [
+        [
+          "Photography",
+          "Developing"
+        ],
+        [
+          "UI/UX",
+          "Exploring"
+        ],
+        [
+          "Video Editing",
+          "Beginner"
+        ]
+      ]
+    },
+    {
+      "title": "Communication",
+      "items": [
+        [
+          "English Speaking",
+          "Developing"
+        ],
+        [
+          "Communication Skills",
+          "Developing"
+        ]
+      ]
+    },
+    {
+      "title": "Exploration",
+      "items": [
+        [
+          "Aerospace",
+          "Exploring"
+        ],
+        [
+          "Space",
+          "Exploring"
+        ],
+        [
+          "Science",
+          "Exploring"
+        ]
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Current",
+      "name": "This website",
+      "description": "Personal site. HTML, CSS, JavaScript.",
+      "status": "live, in progress."
+    },
+    {
+      "title": "Experimental",
+      "description": "Placeholder. Add a project name, description, tech and link."
+    },
+    {
+      "title": "Future",
+      "description": "Placeholder. Add something you plan to build."
+    }
+  ],
+  "movies": {
+    "genres": [
+      "Comedy",
+      "Thriller",
+      "Sci-Fi",
+      "Horror",
+      "Romance",
+      "Adventure",
+      "Time Travel"
+    ],
+    "story_types": [
+      "Plot twists",
+      "Mind-blowing endings",
+      "Mystery",
+      "Intelligent characters",
+      "Genius characters",
+      "Comedy",
+      "Time travel",
+      "Alternate reality"
+    ],
+    "actors": [
+      "Shah Rukh Khan",
+      "Farhan Ahmed Jovan",
+      "Sushant Singh Rajput",
+      "Tom Holland",
+      "Cillian Murphy",
+      "Ranbir Kapoor",
+      "Ayushmann Khurrana",
+      "Apurba",
+      "Niloy Alamgir",
+      "Leonardo DiCaprio"
+    ],
+    "actresses": [
+      "Kiara Advani",
+      "Dure Fishan",
+      "Wamiqa Gabbi",
+      "Huma Qureshi",
+      "Samantha Lorraine",
+      "Sadie Sink",
+      "Keya Payel",
+      "Sabila Nur",
+      "Safa Kabir",
+      "Nusrat Imrose Tisha"
+    ]
+  },
+  "philosophy": [
+    "Curiosity",
+    "Simplicity",
+    "Learning",
+    "Exploration",
+    "Creativity",
+    "Growth"
+  ],
+  "facts": [
+    "Enjoys photography.",
+    "Enjoys badminton.",
+    "Interested in aerospace and space.",
+    "Likes nature.",
+    "Enjoys foggy mornings.",
+    "Likes clear autumn skies.",
+    "Enjoys lo-fi music.",
+    "Likes time-travel stories.",
+    "Enjoys discovering new things."
+  ],
+  "family": {
+    "father": {
+      "name": "Md Anisul Islam",
+      "nickname": "Anis"
+    },
+    "mother": {
+      "name": "Most. Masuda Begum",
+      "nickname": "Sweety"
+    },
+    "siblings": [
+      {
+        "name": "Al Afifa Shorone",
+        "relation": "elder sister",
+        "order": "eldest"
+      },
+      {
+        "name": "Tanvir Ahmmed",
+        "relation": "middle child",
+        "order": "middle"
+      },
+      {
+        "name": "Araf Mahmud",
+        "nickname": "Sweet",
+        "relation": "younger brother",
+        "order": "youngest"
+      }
+    ]
+  },
+  "contact": {
+    "email": "tanvir.shoron@outlook.com",
+    "github": "https://github.com/tanvirshoron",
+    "linkedin": "https://www.linkedin.com/in/tanvirshoron",
+    "instagram": "https://www.instagram.com/tanvir__shoron",
+    "x": "https://x.com/tanvir__shoron",
+    "facebook": "https://www.facebook.com/profile.php?id=61592938436798"
+  },
+  "photography": {
+    "filters": [
+      "All",
+      "Space",
+      "Aerospace",
+      "Nature",
+      "Photography",
+      "Explore"
+    ],
+    "items": [
+      {
+        "title": "Space",
+        "subtitle": "A quiet look beyond Earth",
+        "image": "images/space.svg"
+      },
+      {
+        "title": "Aerospace",
+        "subtitle": "Curiosity above the clouds",
+        "image": "images/aerospace.svg"
+      },
+      {
+        "title": "Nature",
+        "subtitle": "Fog, sky and open air",
+        "image": "images/nature.svg"
+      },
+      {
+        "title": "Photography",
+        "subtitle": "Frames waiting to tell a story",
+        "image": "images/photography.svg"
+      },
+      {
+        "title": "Night Sky",
+        "subtitle": "Clear skies. Infinite questions.",
+        "image": "images/night.svg"
+      },
+      {
+        "title": "Explore",
+        "subtitle": "Discover something new",
+        "image": "images/explore.svg"
+      }
+    ]
+  },
+  "media": {
+    "profile_image": "media/profile.jpg",
+    "music": "media/music.mp3",
+    "music_title": "Rise Up · TheFatRat",
+    "profile_alt": "Portrait of Tanvir Ahmmed"
+  },
+  "_edit_guide": {
+    "note": "Edit this file to update personal/content settings without changing index.html.",
+    "profile_image": "Replace media/profile.jpg or change media.profile_image to another image path.",
+    "music": "Replace media/music.mp3 or change media.music to another audio path.",
+    "photography": "Change photography.items image paths to update the visual cards."
+  }
+}
