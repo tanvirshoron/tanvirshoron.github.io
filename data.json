@@ -5,7 +5,12 @@
     "nickname_bn": "স্মরণ",
     "location": "Saidpur, Bangladesh",
     "email": "tanvir.shoron@outlook.com",
-    "tagline": "Exploring ideas beyond the ordinary."
+    "tagline": "Exploring ideas beyond the ordinary.",
+    "hero_nickname": "Shoron / স্মরণ",
+    "hero_explore": "Explore My World",
+    "hero_aethryn": "Meet AETHRYN",
+    "short_name": "Tanvir",
+    "status": "Student"
   },
   "about": {
     "paragraphs": [
@@ -24,8 +29,13 @@
       "Creativity",
       "Technology",
       "Web Development",
-      "Computer Science"
-    ]
+      "Computer Science",
+      "Introvert",
+      "Curious",
+      "Independent Learner"
+    ],
+    "title": "About",
+    "note": ""
   },
   "education": [
     {
@@ -116,7 +126,9 @@
       "title": "Current",
       "name": "This website",
       "description": "Personal site. HTML, CSS, JavaScript.",
-      "status": "live, in progress."
+      "status": "live, in progress.",
+      "tech": "HTML · CSS · JavaScript",
+      "link": ""
     },
     {
       "title": "Experimental",
@@ -170,7 +182,14 @@
       "Sabila Nur",
       "Safa Kabir",
       "Nusrat Imrose Tisha"
-    ]
+    ],
+    "title": "Movies",
+    "genres_title": "Genres",
+    "story_types_title": "Favorite story types",
+    "actors_title": "Favorite actors",
+    "actresses_title": "Favorite actresses",
+    "favorites_title": "Favorite things",
+    "favorites": []
   },
   "philosophy": [
     "Curiosity",
@@ -191,41 +210,21 @@
     "Likes time-travel stories.",
     "Enjoys discovering new things."
   ],
-  "family": {
-    "father": {
-      "name": "Md Anisul Islam",
-      "nickname": "Anis"
-    },
-    "mother": {
-      "name": "Most. Masuda Begum",
-      "nickname": "Sweety"
-    },
-    "siblings": [
-      {
-        "name": "Al Afifa Shorone",
-        "relation": "elder sister",
-        "order": "eldest"
-      },
-      {
-        "name": "Tanvir Ahmmed",
-        "relation": "middle child",
-        "order": "middle"
-      },
-      {
-        "name": "Araf Mahmud",
-        "nickname": "Sweet",
-        "relation": "younger brother",
-        "order": "youngest"
-      }
-    ]
-  },
   "contact": {
     "email": "tanvir.shoron@outlook.com",
     "github": "https://github.com/tanvirshoron",
     "linkedin": "https://www.linkedin.com/in/tanvirshoron",
     "instagram": "https://www.instagram.com/tanvir__shoron",
     "x": "https://x.com/tanvir__shoron",
-    "facebook": "https://www.facebook.com/profile.php?id=61592938436798"
+    "facebook": "https://www.facebook.com/profile.php?id=61592938436798",
+    "resume": "",
+    "title": "Contact",
+    "kicker": "Have an idea?",
+    "cta_title": "Let's build something meaningful.",
+    "cta_text": "For projects, collaborations or just a good conversation.",
+    "email_cta": "Email me ↗",
+    "social_cta": "LinkedIn ↗",
+    "social_cta_url": "https://www.linkedin.com/in/tanvirshoron"
   },
   "photography": {
     "filters": [
@@ -267,7 +266,10 @@
         "subtitle": "Discover something new",
         "image": "images/explore.svg"
       }
-    ]
+    ],
+    "title": "Photography",
+    "intro": "A visual archive for the things that catch my attention.",
+    "note": "These are visual placeholders for now. Replace the image paths in data.json with your own photos anytime."
   },
   "media": {
     "profile_image": "media/profile.jpg",
@@ -276,9 +278,291 @@
     "profile_alt": "Portrait of Tanvir Ahmmed"
   },
   "_edit_guide": {
-    "note": "Edit this file to update personal/content settings without changing index.html.",
+    "note": "Edit only data.json to update your personal/profile/content information. The HTML is the design/engine.",
     "profile_image": "Replace media/profile.jpg or change media.profile_image to another image path.",
     "music": "Replace media/music.mp3 or change media.music to another audio path.",
-    "photography": "Change photography.items image paths to update the visual cards."
+    "photography": "Change photography.items image paths to update the visual cards.",
+    "planets": "Edit or add planet facts in the planets list. Moon counts change as new moons are confirmed.",
+    "resume": "Set contact.resume to a file path like media/resume.pdf to show a Download CV button. Leave empty to hide it.",
+    "projects": "Each project can have name, description, status, tech and link. Link shows a View project button.",
+    "sections": "Profile, hero, About, Currently, Education, Skills, Projects, Photography, Movies, Books, Philosophy, Facts, Contact, Space Lab UI, AETHRYN UI, navigation, footer and media are all controlled here.",
+    "labels": "Change section/navigation labels in labels. Personal traits can be edited in about.chips.",
+    "personal": "Edit personal.personality, personal.values and personal.interests to update the Personal section.",
+    "job": "Update job.status, job.role, job.description and job.items in data.json without editing HTML."
+  },
+  "planets": [
+    {
+      "name": "Mercury",
+      "type": "Rocky planet",
+      "diameter": "4,879 km",
+      "distance_from_sun": "57.9 million km",
+      "day_length": "58.6 Earth days",
+      "year_length": "88 days",
+      "moons": "0",
+      "note": "Smallest planet, with extreme temperature swings."
+    },
+    {
+      "name": "Venus",
+      "type": "Rocky planet",
+      "diameter": "12,104 km",
+      "distance_from_sun": "108.2 million km",
+      "day_length": "243 Earth days",
+      "year_length": "225 days",
+      "moons": "0",
+      "note": "Hottest planet, and it spins backwards."
+    },
+    {
+      "name": "Earth",
+      "type": "Rocky planet",
+      "diameter": "12,742 km",
+      "distance_from_sun": "149.6 million km",
+      "day_length": "24 hours",
+      "year_length": "365.25 days",
+      "moons": "1",
+      "note": "The only place known to host life."
+    },
+    {
+      "name": "Mars",
+      "type": "Rocky planet",
+      "diameter": "6,779 km",
+      "distance_from_sun": "227.9 million km",
+      "day_length": "24.6 hours",
+      "year_length": "687 days",
+      "moons": "2",
+      "note": "Home to Olympus Mons, the tallest volcano known."
+    },
+    {
+      "name": "Jupiter",
+      "type": "Gas giant",
+      "diameter": "139,820 km",
+      "distance_from_sun": "778.5 million km",
+      "day_length": "9.9 hours",
+      "year_length": "11.9 years",
+      "moons": "95+",
+      "note": "Its Great Red Spot is a storm larger than Earth."
+    },
+    {
+      "name": "Saturn",
+      "type": "Gas giant",
+      "diameter": "116,460 km",
+      "distance_from_sun": "1,434 million km",
+      "day_length": "10.7 hours",
+      "year_length": "29.4 years",
+      "moons": "270+",
+      "note": "Famous for its wide, bright ring system."
+    },
+    {
+      "name": "Uranus",
+      "type": "Ice giant",
+      "diameter": "50,724 km",
+      "distance_from_sun": "2,871 million km",
+      "day_length": "17.2 hours",
+      "year_length": "84 years",
+      "moons": "29",
+      "note": "Rotates on its side, tilted about 98 degrees."
+    },
+    {
+      "name": "Neptune",
+      "type": "Ice giant",
+      "diameter": "49,244 km",
+      "distance_from_sun": "4,495 million km",
+      "day_length": "16.1 hours",
+      "year_length": "164.8 years",
+      "moons": "16",
+      "note": "Windiest planet, with supersonic storms."
+    }
+  ],
+  "skills_note": "Labels are placeholders. Edit them to match your real level.",
+  "projects_intro": "A small collection of things I've built, explored or plan to build.",
+  "books": {
+    "title": "Books",
+    "items": [],
+    "note": "No books added yet. Add books here in data.json."
+  },
+  "now": {
+    "title": "Currently",
+    "cards": [
+      {
+        "kicker": "What I'm focused on",
+        "title": "Building the next version of myself.",
+        "text": "Learning, experimenting and turning curiosity into real projects.",
+        "items": [
+          {
+            "name": "University prep",
+            "status": "Current priority"
+          },
+          {
+            "name": "University Admission",
+            "status": "Preparing"
+          },
+          {
+            "name": "Aerospace & Space",
+            "status": "Exploring"
+          },
+          {
+            "name": "English & Communication",
+            "status": "Developing"
+          }
+        ]
+      },
+      {
+        "kicker": "Next direction",
+        "title": "From curiosity to capability.",
+        "text": "A portfolio that grows with the person behind it.",
+        "chips": [
+          "Build",
+          "Learn",
+          "Explore",
+          "Improve"
+        ]
+      }
+    ]
+  },
+  "philosophy_title": "Philosophy",
+  "philosophy_quote": "Simplicity is the ultimate sophistication.",
+  "facts_title": "Fun facts",
+  "random_fact": "Random fact",
+  "space_ui": {
+    "title": "Space Lab",
+    "planets_title": "Planets",
+    "planets_badge": "STATIC REFERENCE",
+    "dashboard_title": "Dashboard",
+    "game_title": "Orbit dodge",
+    "game_note": "Arrow keys, A/D, or drag. Dodge the asteroids.\nScore: {score}",
+    "pick_planet": "Pick a planet.",
+    "local_time": "Local time",
+    "moon_phase": "Moon phase",
+    "world_clocks": "World clocks",
+    "knowledge_corner": "Knowledge Corner",
+    "live": "LIVE",
+    "computed": "COMPUTED",
+    "live_api": "LIVE API",
+    "next_question": "Next Question"
+  },
+  "aethryn_ui": {
+    "title": "AETHRYN",
+    "tag": "Intelligence beyond the ordinary.",
+    "placeholder": "Ask anything",
+    "send": "Send",
+    "clear": "Clear",
+    "note": "Tanvir Mode answers from this page only. General and Explore modes use AI and have no live data or internet.",
+    "greeting": "Hi, I am AETHRYN. Ask me about Tanvir.",
+    "modes": [
+      {
+        "id": "Tanvir",
+        "label": "Tanvir Mode"
+      },
+      {
+        "id": "General",
+        "label": "General Mode"
+      },
+      {
+        "id": "Explore",
+        "label": "Explore Mode"
+      }
+    ]
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "photography": "Photography",
+    "movies": "Movies",
+    "books": "Books",
+    "space": "Space Lab",
+    "aethryn": "AETHRYN",
+    "contact": "Contact",
+    "personal": "Personal",
+    "job": "Job",
+    "currently": "Currently",
+    "experience": "Experience"
+  },
+  "footer": {
+    "copyright": "© Tanvir Ahmmed",
+    "dark": "Dark",
+    "midnight": "Midnight"
+  },
+  "labels": {
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "photography": "Photography",
+    "movies": "Movies",
+    "books": "Books",
+    "currently": "Currently",
+    "contact": "Contact",
+    "philosophy": "Philosophy",
+    "facts": "Fun facts",
+    "space_lab": "Space Lab",
+    "planets": "Planets",
+    "dashboard": "Dashboard",
+    "orbit_game": "Orbit dodge",
+    "aethryn": "AETHRYN",
+    "personal": "Personal",
+    "job": "Job",
+    "experience": "Experience"
+  },
+  "personal": {
+    "title": "Personal",
+    "intro": "A little more about how I see myself and the things that shape me.",
+    "personality": [
+      "Introvert",
+      "Curious",
+      "Independent Learner",
+      "Creative"
+    ],
+    "values": [
+      "Curiosity",
+      "Self-improvement",
+      "Exploration",
+      "Creativity"
+    ],
+    "interests": [
+      "Aerospace",
+      "Space",
+      "Science",
+      "Photography",
+      "Technology",
+      "Nature"
+    ],
+    "labels": {
+      "personality": "Personality",
+      "values": "Values",
+      "interests": "Interests"
+    }
+  },
+  "job": {
+    "title": "Experience",
+    "intro": "What I am doing, learning, and building.",
+    "items": [
+      {
+        "title": "Student",
+        "period": "2026 — Present",
+        "description": "Currently a student, focused on university admission preparation and learning.",
+        "tag": "Current"
+      },
+      {
+        "title": "Web Developer",
+        "period": "2025 — Present",
+        "description": "Building and improving personal websites and interactive web projects.",
+        "tag": "Personal Work"
+      },
+      {
+        "title": "AI Project Builder",
+        "period": "2025 — Present",
+        "description": "Working on AETHRYN, a personal AI project and web experience.",
+        "tag": "AETHRYN"
+      },
+      {
+        "title": "Photography",
+        "period": "Ongoing",
+        "description": "Exploring photography and visual storytelling as a creative interest.",
+        "tag": "Creative"
+      }
+    ],
+    "period_label": "Period"
   }
-}
+      }
+      
