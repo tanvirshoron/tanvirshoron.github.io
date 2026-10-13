@@ -15,22 +15,20 @@
   },
   "about": {
     "paragraphs": [
-      "I'm Tanvir, a student from Saidpur, Bangladesh. I'm drawn to anything that makes me ask how it works, from the code behind a website to the physics behind a rocket.",
-      "I'm exploring space, aerospace and science out of pure curiosity, and I look up at the night sky more than I probably should. I also enjoy photography, mostly of the sky, nature and quiet places. Technology and web development are part of what I like to explore too.",
-      "I'm still early in the journey. This site is where I keep what I'm learning."
-    ],
+  "I'm Tanvir Ahmmed Shoron, from Saidpur, Nilphamari, Bangladesh.",
+  "I enjoy learning new things, exploring technology, and improving myself along the way.",
+  "This website is a small collection of who I am, me what I do, and what interests me."
+    ]    
     "chips": [
       "Science",
-      "Aerospace",
-      "Space",
       "Nature",
-      "Photography",
+      "Introvert",
       "World exploration",
       "Learning",
       "Creativity",
       "Technology",
       "Web Development",
-      "Introvert",
+      "Photography",
       "Curious",
       "Independent Learner"
     ],
@@ -103,7 +101,7 @@
       "title": "Exploration",
       "items": [
         [
-          "Aerospace",
+          "Science",
           "Exploring"
         ],
         [
@@ -111,7 +109,7 @@
           "Exploring"
         ],
         [
-          "Science",
+          "Communication",
           "Exploring"
         ]
       ]
